@@ -24,6 +24,59 @@ This report provides a comprehensive analysis of parameter support across Azure 
    - GPT-5.1 and GPT-5.2: Best feature support
    - GPT-4.1: Stable but limited reasoning capabilities
 
+## Parameter Support Matrix
+
+Quick reference for parameter support across all models:
+
+### Responses API (Recommended)
+
+| Model | temperature | top_p | max_tokens | reasoning | instructions |
+|-------|-------------|-------|------------|-----------|-------------|
+| gpt-4.1-mini | ✅ | - | - | ❌ | - |
+| gpt-4.1-nano | ✅ | - | - | ❌ | - |
+| gpt-4.1 | ✅ | - | - | ❌ | - |
+| gpt-5-chat | ✅ | - | - | ❌ | - |
+| gpt-5-chat | ✅ | - | - | ❌ | - |
+| gpt-5-codex | ❌ | - | - | ✅ | - |
+| gpt-5-mini | ❌ | - | - | ✅ | - |
+| gpt-5-nano | ❌ | - | - | ✅ | - |
+| gpt-5-pro | ❌ | - | - | ⚠️ | - |
+| gpt-5.1-chat | ❌ | - | - | ⚠️ | - |
+| gpt-5.1-codex-max | ❌ | - | - | ✅ | - |
+| gpt-5.1-codex-mini | ❌ | - | - | ✅ | - |
+| gpt-5.1-codex | ❌ | - | - | ✅ | - |
+| gpt-5.1 | ✅ | - | - | ✅ | - |
+| gpt-5.2-chat | ❌ | - | - | ⚠️ | - |
+| gpt-5.2-codex | ❌ | - | - | ✅ | - |
+| gpt-5.2 | ✅ | - | - | ✅ | - |
+| gpt-5 | ❌ | - | - | ✅ | - |
+
+### Chat Completions API
+
+| Model | temperature | top_p | max_tokens |
+|-------|-------------|-------|------------|
+| gpt-4.1-mini | ❌ | ❌ | - |
+| gpt-4.1-nano | ❌ | ❌ | - |
+| gpt-4.1 | ✅ | ✅ | - |
+| gpt-5-chat | ❌ | ❌ | - |
+| gpt-5-chat | ❌ | ❌ | - |
+| gpt-5-codex | ❌ | ❌ | - |
+| gpt-5-mini | ⚠️ | ❌ | - |
+| gpt-5-nano | ❌ | ❌ | - |
+| gpt-5-pro | ❌ | ❌ | - |
+| gpt-5.1-chat | ❌ | ❌ | - |
+| gpt-5.1-codex-max | ❌ | ❌ | - |
+| gpt-5.1-codex-mini | ❌ | ❌ | - |
+| gpt-5.1-codex | ❌ | ❌ | - |
+| gpt-5.1 | ❌ | ❌ | - |
+| gpt-5.2-chat | ❌ | ❌ | - |
+| gpt-5.2-codex | ❌ | ❌ | - |
+| gpt-5.2 | ❌ | ❌ | - |
+| gpt-5 | ❌ | ❌ | - |
+
+**Legend:** ✅ Supported | ❌ Not Supported | ⚠️ Limited/Partial Support
+
+
 ---
 
 ## GPT-4.1 Series
